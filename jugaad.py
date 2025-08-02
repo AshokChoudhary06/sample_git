@@ -38,20 +38,6 @@ def team1vsteam2(team, team2):
             'noResult': nr}
 
 
-#def allRecord(team):
-    #df = matches[(matches['Team1'] == team) | (matches['Team2'] == team)].copy()
-    #mp = df.shape[0]
-    ##won = df[df.WinningTeam == team].shape[0]
-    #nr = df[df.WinningTeam.isnull()].shape[0]
-    #loss = mp - won - nr
-    ##nt = df[(df.MatchNumber == 'Final') & (df.WinningTeam == team)].shape[0]
-    #return {'matchesplayed': mp,
-       #     'won': won,
-      #    'loss': loss,
-        #    'noResult': nr,
-         #   'title': nt}
-
-
 def teamAPI(team, matches=matches):
     df = matches[(matches['Team1'] == team) | (matches['Team2'] == team)].copy()
     self_record = allRecord(team)

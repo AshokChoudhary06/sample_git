@@ -37,11 +37,6 @@ def batsman():
     response_batsman = jugaad.batsmanRecord(batsman, jugaad.batter_data)
     return response_batsman
 
-    # aur bananan paadega jugaad file mein 
-@app.route('/api/batsmanapi')
-def batsmanapi():
-    batsman_name = request.args.get('batsman_name')
-    response_3 = jugaad.batsmanAPI(batsman_name)
-    return response_3
+    # aur bananan paadega jugaad file mein s
 
 app.run(debug = True)
