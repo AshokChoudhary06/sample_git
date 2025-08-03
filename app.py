@@ -36,6 +36,11 @@ def batsman():
     batsman = request.args.get('batsman')
     response_batsman = jugaad.batsmanRecord(batsman, jugaad.batter_data)
     return response_batsman
+@app.route('/api/bowlerrecord')
+def bowler():
+    bowler = request.args.get('bowler')
+    response_bowler = jugaad.bowlerRecord(bowler, jugaad.bowler_data)
+    return response_bowler
 
     # aur bananan paadega jugaad file mein s
 
